@@ -37,9 +37,6 @@ export class User {
   @Column('text', { array: true, default: ['user'] })
   roles: string[];
 
-  @Column('text', { nullable: true })
-  teamId: string;
-
   @CreateDateColumn()
   created_at: Date;
 
